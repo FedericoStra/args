@@ -8,4 +8,4 @@ clean:
 	$(RM) args
 
 install:
-	install -t ~/.local/bin/ args
+	install -o root -g root -t ~/.local/bin/ args
