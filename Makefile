@@ -1,4 +1,4 @@
-CFLAGS += -std=c11 -O2 -Wall
+CFLAGS += -std=c17 -O2 -Wall -Wextra -Wpedantic
 
 .PHONY: all clean install
 
@@ -8,4 +8,4 @@ clean:
 	$(RM) args
 
 install:
-	install -o root -g root -t ~/.local/bin/ args
+	install -t ~/.local/bin/ args
